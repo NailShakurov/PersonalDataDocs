@@ -3,26 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Densa Family — Юридическая информация</title>
+    <title>Densa Family — Консультации по правильному питанию в Алматы</title>
+    <meta name="description" content="Информационные услуги по подбору питания и коррекции образа жизни в Алматы.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
     <style>
-        /* Делаем так, чтобы футер всегда был прижат к низу, если контента мало */
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #0f172a; /* Темный фон в тон футеру */
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        
+        .card { 
+            transition: all 0.3s ease; 
+            border: 1px solid #f1f5f9;
         }
-        main {
-            flex-grow: 1;
+        .card:hover { 
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05);
+            border-color: #e2e8f0;
+        }
+        .btn-main {
+            transition: all 0.2s ease;
+            border-radius: 12px;
+        }
+        .btn-main:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
         }
     </style>
 </head>
-<body>
+<body class="bg-white text-slate-800 antialiased">
+
+    <header class="bg-white/90 sticky top-0 z-50 border-b border-slate-100 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+            <div class="flex items-center">
+                <img src="image_384fe6.png" alt="Densa Family" class="h-12 w-auto">
+            </div>
+            
+            <nav class="flex gap-8 text-[11px] font-bold uppercase tracking-widest text-slate-500">
+                <a href="#services" class="hover:text-blue-600 transition">Услуги</a>
+                <a href="#contacts" class="hover:text-blue-600 transition">Контакты</a>
+            </nav>
+
+            <a href="https://t.me/Doctor_Guzaliia_bot" target="_blank" class="bg-blue-600 text-white px-6 py-3 btn-main font-bold text-xs uppercase tracking-tight shadow-md">
+                Запись на консультацию
+            </a>
+        </div>
+    </header>
 
     <main>
-        </main>
+        <section class="container mx-auto px-6 py-20 md:py-28 text-center max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-8 leading-tight">
+                Консультации по <span class="text-blue-600">правильному питанию</span> в Алматы
+            </h1>
+            <p class="text-lg md:text-xl text-slate-500 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Обучение принципам здорового образа жизни, индивидуальный подбор рациона и профессиональное сопровождение.
+            </p>
+            <div class="flex justify-center">
+                <a href="#services" class="bg-slate-900 text-white px-10 py-4 btn-main font-bold">Выбрать формат</a>
+            </div>
+        </section>
+
+        <section id="services" class="container mx-auto px-6 py-20 border-t border-slate-50">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold mb-4 uppercase tracking-tighter text-slate-900">Услуги и стоимость</h2>
+                <div class="h-1.5 w-16 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="card p-8 rounded-3xl flex flex-col bg-white">
+                    <h3 class="text-xl font-bold mb-4 text-slate-900 leading-tight">Укороченная (повторная) консультация</h3>
+                    <p class="text-slate-500 text-sm mb-6 flex-grow">
+                        Продолжительность: 30 минут. Корректировка текущего рациона, ответы на вопросы по внедренным изменениям.
+                    </p>
+                    <div class="text-2xl font-black text-slate-900 mb-6">40 000 ₸</div>
+                    <a href="https://t.me/Doctor_Guzaliia_bot" class="block text-center border-2 border-slate-900 text-slate-900 py-3 rounded-xl font-bold hover:bg-slate-900 hover:text-white transition">Записаться</a>
+                </div>
+
+                <div class="card p-8 rounded-3xl border-blue-600 ring-1 ring-blue-600/10 flex flex-col relative overflow-hidden bg-white">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-[10px] font-bold px-4 py-1 rounded-bl-lg uppercase">Популярно</div>
+                    <h3 class="text-xl font-bold mb-4 text-slate-900 leading-tight">Стандартная консультация</h3>
+                    <p class="text-slate-500 text-sm mb-6 flex-grow">
+                        Продолжительность: 60 минут. Полный разбор текущего питания, составление персональных рекомендаций и обучение основам.
+                    </p>
+                    <div class="text-2xl font-black text-slate-900 mb-6">50 000 ₸</div>
+                    <a href="https://t.me/Doctor_Guzaliia_bot" class="block text-center bg-blue-600 text-white py-3 rounded-xl font-bold btn-main shadow-lg shadow-blue-200">Записаться</a>
+                </div>
+
+                <div class="card p-8 rounded-3xl flex flex-col bg-white">
+                    <h3 class="text-xl font-bold mb-4 text-slate-900 leading-tight">Индивидуальное сопровождение</h3>
+                    <p class="text-slate-500 text-sm mb-6 flex-grow">
+                        Срок: от 1 месяца. Ежедневная поддержка, обучение привычкам, адаптация меню и долгосрочный контроль результата.
+                    </p>
+                    <div class="text-2xl font-black text-blue-600 mb-6">от 100 000 ₸</div>
+                    <a href="https://t.me/Doctor_Guzaliia_bot" class="block text-center border-2 border-slate-900 text-slate-900 py-3 rounded-xl font-bold hover:bg-slate-900 hover:text-white transition">Записаться</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6 py-10">
+            <div class="max-w-2xl mx-auto text-center bg-slate-50 p-10 rounded-[2rem]">
+                <p class="text-[10px] text-slate-400 uppercase font-black tracking-widest mb-6">Оплата через систему Robokassa</p>
+                <div class="flex justify-center items-center gap-8">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-5 opacity-60">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-8 opacity-60">
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-6 py-12">
+            <div class="max-w-3xl mx-auto text-center p-8 border border-slate-100 rounded-3xl">
+                <p class="text-[12px] text-slate-400 font-medium leading-relaxed">
+                    <strong>Дисклеймер:</strong> Не является медицинской услугой. Перед применением рекомендаций проконсультируйтесь со специалистом. Информация на сайте носит ознакомительный характер и направлена на обучение принципам здорового питания.
+                </p>
+            </div>
+        </section>
+    </main>
 
     <footer id="contacts" class="bg-slate-900 text-white pt-20 pb-10">
         <div class="container mx-auto px-6">
