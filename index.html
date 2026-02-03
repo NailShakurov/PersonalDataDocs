@@ -3,27 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная — Документы</title>
+    <title>Densa Family — Юридическая информация</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f8f9fa; color: #222; margin: 0; padding: 0; }
-        .container { max-width: 700px; margin: 60px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 40px 24px; text-align: center; }
-        h1 { color: #2a4d7a; margin-bottom: 32px; }
-        .links { display: flex; flex-direction: column; gap: 18px; align-items: center; }
-        a { color: #2a4d7a; text-decoration: none; font-size: 1.2em; font-weight: 500; border-bottom: 1px dashed #2a4d7a; transition: border 0.2s; }
-        a:hover { border-bottom: 1px solid #2a4d7a; }
-        @media (max-width: 600px) {
-            .container { padding: 16px 4px; }
+        /* Делаем так, чтобы футер всегда был прижат к низу, если контента мало */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #0f172a; /* Темный фон в тон футеру */
+        }
+        main {
+            flex-grow: 1;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Документы</h1>
-        <div class="links">
-            <a href="dogovor.html">Договор-оферта на оказание платных информационных услуг</a>
-            <a href="politika.html">Политика обработки персональных данных</a>
-            <a href="soglasie.html">Согласие на обработку персональных данных</a>
+
+    <main>
+        </main>
+
+    <footer id="contacts" class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 border-b border-slate-800 pb-16">
+                <div>
+                    <h4 class="text-blue-500 font-black uppercase tracking-widest text-xs mb-6">Реквизиты</h4>
+                    <div class="space-y-2 text-slate-400 text-sm leading-loose">
+                        <p class="text-white font-bold text-base">ТОО "Densa Family"</p>
+                        <p>БИН: 250340027726</p>
+                        <p>Юридический адрес: Республика Казахстан, г. Алматы, Бостандыкский район, ул. Розыбакиева, д. 250</p>
+                    </div>
+                </div>
+                <div class="md:text-right">
+                    <h4 class="text-blue-500 font-black uppercase tracking-widest text-xs mb-6">Связь</h4>
+                    <a href="tel:+77074473483" class="text-2xl md:text-3xl font-bold text-white block mb-4 hover:text-blue-400 transition">+7 (707) 447-34-83</a>
+                    <a href="mailto:nshakurov@gmail.com" class="text-slate-400 hover:text-white transition border-b border-slate-700">nshakurov@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 py-8 text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                <a href="politika.html" class="hover:text-blue-400 transition">Политика конфиденциальности</a>
+                <a href="dogovor.html" class="hover:text-blue-400 transition">Публичная оферта</a>
+                <a href="soglasie.html" class="hover:text-blue-400 transition">Согласие на обработку ПД</a>
+            </div>
+
+            <div class="text-center text-[10px] text-slate-600 uppercase tracking-[0.4em] mt-4">
+                &copy; 2026 Densa Family. Все права защищены.
+            </div>
         </div>
-    </div>
+    </footer>
+
 </body>
 </html>
