@@ -411,5 +411,21 @@ p{ margin:0; }
   margin: 18px 0 10px;
   color: #0f172a;
 }
+/* Специальный фикс для карточки эксперта */
+.expert-card {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: left !important;
+    gap: 3rem !important;
+}
 
+/* На мобилках возвращаем в колонку, чтобы не разъехалось */
+@media (max-width: 768px) {
+    .expert-card {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+}
 
