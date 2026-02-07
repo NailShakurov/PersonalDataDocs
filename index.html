@@ -129,16 +129,19 @@
     </section>
     
     <section class="section container">
-      <div class="paybox" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
-        <div class="paybox-label">Оплата через систему Robokassa</div>
+      <div class="paybox" style="display: flex; flex-direction: column; align-items: center; gap: 2rem; background: #f8fafc; padding: 3rem; border-radius: 24px;">
+        <div class="paybox-label" style="font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em;">Оплата услуг через систему Robokassa</div>
         
-        <div class="payment-widget">
-          <script type="text/javascript" src="https://auth.robokassa.kz/Merchant/PaymentForm/FormSS.js?MerchantLogin=DensaFamily&InvoiceID=0&Culture=ru&Encoding=utf-8&OutSum=0&shp_interface=field&SignatureValue=6389fc9bee39835973b74b91b9649be5"></script>
-        </div>
+        <a href="https://auth.robokassa.kz/Merchant/Index.aspx?MerchantLogin=DensaFamily&InvId=0&Culture=ru&Encoding=utf-8&OutSum=40000&shp_interface=link&SignatureValue=edded7fcb97e4941683bfeb98a720bbc" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           style="background-color: #2563eb; color: white; padding: 18px 40px; border-radius: 12px; font-weight: bold; text-decoration: none; font-size: 1.2rem; transition: all 0.3s ease; box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);">
+           Оплатить консультацию (40 000 ₸)
+        </a>
 
-        <div class="paybox-logos" aria-label="Visa и Mastercard">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" />
+        <div class="paybox-logos" style="display: flex; gap: 1.5rem; opacity: 0.6;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" style="height: 25px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" style="height: 25px;">
         </div>
       </div>
     </section>
