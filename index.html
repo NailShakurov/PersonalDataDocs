@@ -129,8 +129,13 @@
     </section>
     
     <section class="section container">
-      <div class="paybox">
+      <div class="paybox" style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
         <div class="paybox-label">Оплата через систему Robokassa</div>
+        
+        <div class="payment-widget">
+          <script type="text/javascript" src="https://auth.robokassa.kz/Merchant/PaymentForm/FormSS.js?MerchantLogin=DensaFamily&InvoiceID=0&Culture=ru&Encoding=utf-8&OutSum=0&shp_interface=field&SignatureValue=6389fc9bee39835973b74b91b9649be5"></script>
+        </div>
+
         <div class="paybox-logos" aria-label="Visa и Mastercard">
           <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" />
           <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" />
